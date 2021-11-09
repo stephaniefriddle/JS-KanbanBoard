@@ -39,7 +39,9 @@ const create_item = () => {
       error.innerHTML = '';
 
       if (input.value !== '') {
-        
+        order = order + 1;
+        item.innerHTML = input.value;
+        adding = false;
       }
     });
 };
